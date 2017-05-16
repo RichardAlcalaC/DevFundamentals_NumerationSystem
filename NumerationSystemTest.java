@@ -39,4 +39,11 @@ public class NumerationSystemTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void CeroInDecimalIsCeroInBinary()
+    {
+        assertArrayEquals(new int[]{0}, NumerationSystemMain.convertToBinary(0));
+    }
 }
+
