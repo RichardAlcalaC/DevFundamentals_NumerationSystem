@@ -17,6 +17,56 @@ public class NumerationSystemMain
     {
     }
 
+    
+    
+    /* **/
+    // by class
+    public static int [] ToBinaryArray(int n){
+        int length = calculateBinaryArraySize(n);
+        int [] binary = new int[length];
+        
+        for(int index = lenght -1; index >= 0; index--){
+            binaryMode[index] = n%2;
+            n = n/2;
+        }
+        return binary;
+    }
+    
+    public static int [] calculateBinaryArraySize(int n){
+        int length=1;
+        
+    }
+    
+    public static void swapExtremeBits(int [] array){
+        
+        /*
+        int initValue = array[0];
+        int finalValue = array[array.length -1];
+        
+        array[0] = finalValue;
+        array[array.length -1] = initValue;
+        
+        
+        for(int index = array.length -1; index >= 0; index--){
+        }
+        */
+       int aux;
+       
+       for(int index = 0; index <=array.length/2; index++){
+           aux = array[index];
+           array[index] = array[array.length - index -1];
+           array[array.length - index -1] = aux;
+           
+       }
+       
+ 
+    }
+    
+    
+    
+    
+    //***/
+    
     public static int [] convertToBinaryManual(int decimalNumber)
     {
         int binaryMode [] = new int []{0};

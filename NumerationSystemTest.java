@@ -30,6 +30,33 @@ public class NumerationSystemTest
     {
     }
 
+    /*   */
+    
+    @Test
+    public void binaryOf2Is1_0()
+    {
+       // assertArraysEquals(new int []{}, );
+    }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*   */
+    
+    
     /**
      * Tears down the test fixture.
      *
@@ -51,5 +78,48 @@ public class NumerationSystemTest
     {
         assertArrayEquals(new int[]{1}, NumerationSystemMain.convertToBinary(1));
     }
+    
+    
+    //Calc Size
+    @Test
+    public void CalculateSizeOfArrayEqualsToZero()
+    {
+        //assertIsEquals();
+    }
+    
+    //
+    @Test
+    public void swapExtremesOfAnArrayWithOnlyTwoElements()
+    {
+        int [] expected = new int []{1,1};
+        int [] array = new int[]{1,1};
+        NumerationSystemMain.swapExtremeBits(array);
+        assertArrayEquals(expected, array);
+    }
+    
+    @Test
+    public void swapExtremesOfAnArrayWithOnlyTwoElements()
+    {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
