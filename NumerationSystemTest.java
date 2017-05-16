@@ -41,9 +41,15 @@ public class NumerationSystemTest
     }
 
     @Test
-    public void CeroInDecimalIsCeroInBinary()
+    public void CeroInDecimalIsCeroInBinary_ManualTest()
     {
-        assertArrayEquals(new int[]{0}, NumerationSystemMain.convertToBinary(0));
+        assertArrayEquals(new int[]{0}, NumerationSystemMain.convertToBinaryManual(0));
+    }
+    
+    @Test
+    public void OneInDecimalIs1InBinary()
+    {
+        assertArrayEquals(new int[]{1}, NumerationSystemMain.convertToBinary(1));
     }
 }
 
